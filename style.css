@@ -208,3 +208,90 @@ form button:hover {
     background-color: #a52828;
 }
 
+/* Contact Page Styling */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.contact h2 {
+    color: #d32f2f;
+    font-size: 32px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #444;
+}
+
+/* Contact Info */
+.contact-info {
+    margin: 20px auto;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Google Maps Embed */
+.map-container {
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Contact Form */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #d32f2f;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #a52828;
+}
+
+/* Social Media Links */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: white;
+    background-color: #d32f2f;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    background-color: #a52828;
+}
+
