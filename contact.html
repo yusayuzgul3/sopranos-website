@@ -7,27 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   
+
+    <!-- Navigation Bar -->
     <nav>
-        <h1>Sopranos Pizzeria</h1>
-        <ul>
+        <div class="logo">
+            <h1>Sopranos</h1>
+        </div>
+        <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="order.html">Order Now</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="specials.html">Specials</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="nav-buttons">
+            <a href="#" class="login-btn">Log In</a>
+            <a href="order.html" class="order-btn">Order Now</a>
+        </div>
     </nav>
-    
-    
-    
 
+    <!-- Contact Section -->
     <section class="contact">
         <h2>Contact Us</h2>
-        <p>📍 <strong>Address:</strong> 123 Sopranos Street, Pizzeria City</p>
-        <p>📞 <strong>Phone:</strong> +1 (123) 456-7890</p>
-        <p>✉ <strong>Email:</strong> contact@sopranospizzeria.com</p>
+        <p>📍 123 Sopranos Street, Pizzeria City</p>
+        <p>📞 +1 (123) 456-7890</p>
+        <p>✉ contact@sopranospizzeria.com</p>
 
+        <!-- Google Maps Embed -->
+        <div class="map-container">
+            <iframe src=<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3129.7756396404548!2d-75.08923392383657!3d38.33102607185058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b929bd70e07d97%3A0x9b628f80fc9fa9d6!2sSoprano&#39;s%20Pizza!5e0!3m2!1str!2sus!4v1741389383723!5m2!1str!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- Contact Form -->
         <form>
             <input type="text" placeholder="Your Name" required>
             <input type="email" placeholder="Your Email" required>
@@ -36,7 +47,5 @@
         </form>
     </section>
 
-    <script src="script.js"></script>
 </body>
 </html>
-

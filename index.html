@@ -3,62 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Sopranos Pizzeria</title>
+    <title>Sopranos Pizzeria</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
 </head>
 <body>
-   
+
+    <!-- Navigation Bar -->
     <nav>
-        <h1>Sopranos Pizzeria</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
+        <div class="logo">
+            <h1>Sopranos</h1>
+        </div>
+        <ul class="nav-links">
             <li><a href="menu.html">Menu</a></li>
-            <li><a href="order.html">Order Now</a></li>
-            <li><a href="about.html">About</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="specials.html">Specials</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        <div class="nav-buttons">
+            <a href="#" class="login-btn">Log In</a>
+            <a href="order.html" class="order-btn">Order Now</a>
+        </div>
     </nav>
-    
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <p>We'd love to hear from you! Reach us at:</p>
-
-        <div class="contact-info">
-            <p>📍 <strong>Address:</strong> 123 Sopranos Street, Pizzeria City</p>
-            <p>📞 <strong>Phone:</strong> +1 (123) 456-7890</p>
-            <p>✉ <strong>Email:</strong> contact@sopranospizzeria.com</p>
-            <p>🕒 <strong>Hours:</strong> Mon-Sun: 11 AM - 10 PM</p>
-        </div>
-
-        <!-- Google Maps Embed -->
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509156!2d-122.41941548468123!3d37.77492927975992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzMwLjciTiAxMjLCsDI1JzA2LjEiVw!5e0!3m2!1sen!2sus!4v1616249237583!5m2!1sen!2sus" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
-        </div>
-
-        <!-- Contact Form -->
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-
-        <!-- Social Media Links -->
-        <div class="social-links">
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    <!-- Hero Section (Large Pizza Image + CTA) -->
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Coal-Fired, Brick Oven Pizza</h2>
+            <a href="order.html" class="hero-btn">Order Now</a>
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- Featured Sections (Menu, Rewards, Specials) -->
+    <section class="features">
+        <div class="feature">
+            <h3>Hand-Tossed Dough</h3>
+            <p>Made in-house daily</p>
+            <a href="menu.html" class="btn">View Menu</a>
+        </div>
+        <div class="feature">
+            <h3>Join Our Rewards</h3>
+            <p>Earn points on every order</p>
+            <a href="rewards.html" class="btn">Sign Up</a>
+        </div>
+        <div class="feature">
+            <h3>What's Cookin'</h3>
+            <p>Check out our current specials</p>
+            <a href="specials.html" class="btn">See Specials</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Follow us on</p>
+            <div class="social-icons">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+            <p>&copy; 2025 Sopranos Pizzeria. All Rights Reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
