@@ -30,5 +30,9 @@ function checkout() {
     total = 0;
     updateCart();
 }
+// Function to scroll to sections
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
 
 

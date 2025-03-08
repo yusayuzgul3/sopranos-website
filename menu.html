@@ -8,57 +8,350 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">
-            <h1>Sopranos</h1>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="rewards.html">Rewards</a></li>
-            <li><a href="specials.html">Specials</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="nav-buttons">
-            <a href="#" class="login-btn">Log In</a>
-            <a href="order.html" class="order-btn">Order Now</a>
-        </div>
-    </nav>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+        <h1>Sopranos</h1>
+    </div>
+    <ul class="nav-links">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="rewards.html">Rewards</a></li>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-buttons">
+        <a href="#" class="login-btn">Log In</a>
+        <a href="order.html" class="order-btn">Order Now</a>
+    </div>
+</nav>
 
-    <!-- Menu Section -->
-    <section class="menu">
-        <h2>Our Menu</h2>
-        <p>Delicious, fresh, and made to order.</p>
-        
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="images/pepperoni.jpg" alt="Pepperoni Pizza">
-                <h3>Pepperoni Pizza</h3>
-                <p>Classic tomato sauce, mozzarella, and spicy pepperoni.</p>
-                <span>$12.99</span>
-            </div>
-            <div class="menu-item">
-                <img src="images/margherita.jpg" alt="Margherita Pizza">
-                <h3>Margherita Pizza</h3>
-                <p>Fresh tomatoes, basil, and creamy mozzarella.</p>
-                <span>$11.99</span>
-            </div>
-            <div class="menu-item">
-                <img src="images/cheesesteak.jpg" alt="Philly Cheesesteak">
-                <h3>Philly Cheesesteak</h3>
-                <p>Sliced beef, melted cheese, and caramelized onions.</p>
-                <span>$9.99</span>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Sopranos Pizzeria. All Rights Reserved.</p>
-        </div>
-    </footer>
+ <!-- Menu Header Section -->
+<section class="menu-header">
+    <img src="images/menu-header.jpg" alt="Menu Header Image" class="menu-header-img">
+</section>
 
-</body>
-</html>
+<!-- Menu Introduction (Now Below the Image) -->
+<section class="menu-intro">
+    <h1>Menu</h1>
+    <p>Whether you’re looking to have lunch or dinner, Sopranos has options for everyone! Our menu gives you a taste of our signature pizzas, calzones, and more.</p>
+</section>
+
+<!-- Menu Navigation Buttons -->
+<div class="menu-categories">
+    <button class="menu-btn active" onclick="scrollToSection('Appetizer')">Appetizer</button>
+    <button class="menu-btn" onclick="scrollToSection('Salad')">Salads</button>
+    <button class="menu-btn" onclick="scrollToSection('Pizza')">Pizza</button>
+    <button class="menu-btn" onclick="scrollToSection('Speciality Pizza')">Speciality</button>
+    <button class="menu-btn" onclick="scrollToSection('Pasta')">Pasta</button>
+    <button class="menu-btn" onclick="scrollToSection('Burger')">Burger</button>
+    <button class="menu-btn" onclick="scrollToSection('Subs & Sandwiches')">Subs & Sandwiches</button>
+    <button class="menu-btn" onclick="scrollToSection('Deserts')">Deserts</button>
+</div>
+<section id="appetizers">
+    <h2>Appetizers</h2>
+    <div class="menu-grid">
+
+        <!-- Chicken Tenders -->
+        <div class="menu-item">
+            <img src="images/appetizer-placeholder.jpg" alt="Chicken Tenders">
+            <h3>Chicken Tenders</h3>
+            <p>Choice of Barbecue, Honey Mustard, or Ranch</p>
+            <span class="price">$9.49</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Buffalo Chicken Tenders -->
+        <div class="menu-item">
+            <img src="images/appetizer-placeholder.jpg" alt="Buffalo Chicken Tenders">
+            <h3>Buffalo Chicken Tenders</h3>
+            <p>Breaded and fried chicken breast topped in Buffalo sauce</p>
+            <span class="price">$9.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Onion Rings -->
+        <div class="menu-item">
+            <img src="images/appetizer-placeholder.jpg" alt="Onion Rings">
+            <h3>Onion Rings</h3>
+            <p>Beer battered and fried to perfection</p>
+            <span class="price">$7.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Mozzarella Sticks -->
+        <div class="menu-item">
+            <img src="images/appetizer-placeholder.jpg" alt="Mozzarella Sticks">
+            <h3>Mozzarella Sticks</h3>
+            <p>Fresh mozzarella breaded, seasoned, and fried</p>
+            <span class="price">$8.49</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Fried Calamari -->
+        <div class="menu-item">
+            <img src="images/appetizer-placeholder.jpg" alt="Fried Calamari">
+            <h3>Fried Calamari</h3>
+            <p>Fried to perfection and served with our homemade marinara sauce</p>
+            <span class="price">$14.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Fried Ravioli -->
+        <div class="menu-item">
+            <img src="images/appetizer-placeholder.jpg" alt="Fried Ravioli">
+            <h3>Fried Ravioli</h3>
+            <p>Filled with mozzarella and ricotta cheese, fried, and served with marinara sauce</p>
+            <span class="price">$8.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Garlic Bread -->
+        <div class="menu-item">
+            <img src="images/appetizer-placeholder.jpg" alt="Garlic Bread">
+            <h3>Garlic Bread</h3>
+            <p>Italian bread topped with olive oil and garlic butter</p>
+            <span class="price">$5.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Garlic Bread with Cheese -->
+        <div class="menu-item">
+            <img src="images/appetizer-placeholder.jpg" alt="Garlic Bread with Cheese">
+            <h3>Garlic Bread with Cheese</h3>
+            <p>Italian bread topped with olive oil, garlic butter, and melted cheese</p>
+            <span class="price">$6.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- House Salad -->
+        <div class="menu-item">
+            <img src="images/appetizer-placeholder.jpg" alt="House Salad">
+            <h3>House Salad</h3>
+            <p>Mix of fresh vegetables</p>
+            <span class="price">$4.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Cheese Fries -->
+        <div class="menu-item">
+            <img src="images/appetizer-placeholder.jpg" alt="Cheese Fries">
+            <h3>Cheese Fries</h3>
+            <p>French fries with melted mozzarella and oven-baked</p>
+            <select>
+                <option>Small - $9.99</option>
+                <option>Large - $11.99</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Bacon Cheese Fries -->
+        <div class="menu-item">
+            <img src="images/appetizer-placeholder.jpg" alt="Bacon Cheese Fries">
+            <h3>Bacon Cheese Fries</h3>
+            <p>Topped with mozzarella cheese and bacon</p>
+            <select>
+                <option>Small - $9.99</option>
+                <option>Large - $11.99</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Chicken Wings -->
+        <div class="menu-item">
+            <img src="images/appetizer-placeholder.jpg" alt="Chicken Wings">
+            <h3>Chicken Wings</h3>
+            <p>Choice of Buffalo Hot, Mild, Honey Barbecue, Old Bay, or Sweet Chili</p>
+            <select>
+                <option>10 - $18.99</option>
+                <option>20 - $32.99</option>
+                <option>30 - $45.99</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- Salad Section -->
+<section id="salad">
+    <h2 class="menu-category">Salads</h2>
+    <div class="menu-grid">
+
+        <!-- Caesar Salad -->
+        <div class="menu-item">
+            <img src="images/salads/caesar-salad.jpg" alt="Caesar Salad">
+            <h3>Caesar Salad</h3>
+            <p>Romaine lettuce, croutons, parmesan cheese topped with creamy Caesar dressing.</p>
+            <p class="price">$10.99</p>
+            <label>Extra Grilled Chicken? (+$4.99)</label>
+            <select>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            <label>Choose 2 Dressings:</label>
+            <select multiple>
+                <option>Ranch</option>
+                <option>Blue Cheese</option>
+                <option>Honey Mustard</option>
+                <option>Caesar</option>
+                <option>Italian</option>
+                <option>1000 Island</option>
+                <option>French</option>
+                <option>Balsamic</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Grilled Chicken Caesar -->
+        <div class="menu-item">
+            <img src="images/salads/grilled-chicken-caesar.jpg" alt="Grilled Chicken Caesar">
+            <h3>Grilled Chicken Caesar</h3>
+            <p>Fresh romaine lettuce, grilled chicken, parmesan cheese, and Caesar dressing.</p>
+            <p class="price">$13.99</p>
+            <label>Extra Grilled Chicken? (+$4.99)</label>
+            <select>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            <label>Choose 2 Dressings:</label>
+            <select multiple>
+                <option>Ranch</option>
+                <option>Blue Cheese</option>
+                <option>Honey Mustard</option>
+                <option>Caesar</option>
+                <option>Italian</option>
+                <option>1000 Island</option>
+                <option>French</option>
+                <option>Balsamic</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Garden Salad -->
+        <div class="menu-item">
+            <img src="images/salads/garden-salad.jpg" alt="Garden Salad">
+            <h3>Garden Salad</h3>
+            <p>Fresh lettuce, tomatoes, cucumbers, onions, and croutons.</p>
+            <p class="price">$10.99</p>
+            <label>Add Grilled Chicken? (+$4.99)</label>
+            <select>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            <label>Choose 2 Dressings:</label>
+            <select multiple>
+                <option>Ranch</option>
+                <option>Blue Cheese</option>
+                <option>Honey Mustard</option>
+                <option>Caesar</option>
+                <option>Italian</option>
+                <option>1000 Island</option>
+                <option>French</option>
+                <option>Balsamic</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Grilled or Crispy Chicken Salad -->
+        <div class="menu-item">
+            <img src="images/salads/grilled-crispy-chicken-salad.jpg" alt="Grilled or Crispy Chicken Salad">
+            <h3>Grilled or Crispy Chicken Salad</h3>
+            <p>Garden salad with your choice of grilled or fried chicken.</p>
+            <p class="price">$13.99</p>
+            <label>Extra Grilled Chicken? (+$4.99)</label>
+            <select>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            <label>Choose 2 Dressings:</label>
+            <select multiple>
+                <option>Ranch</option>
+                <option>Blue Cheese</option>
+                <option>Honey Mustard</option>
+                <option>Caesar</option>
+                <option>Italian</option>
+                <option>1000 Island</option>
+                <option>French</option>
+                <option>Balsamic</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Buffalo Chicken Salad -->
+        <div class="menu-item">
+            <img src="images/salads/buffalo-chicken-salad.jpg" alt="Buffalo Chicken Salad">
+            <h3>Buffalo Chicken Salad</h3>
+            <p>Blend of fresh vegetables served with buffalo breaded chicken breast.</p>
+            <p class="price">$14.99</p>
+            <label>Extra Grilled Chicken? (+$4.99)</label>
+            <select>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            <label>Choose 2 Dressings:</label>
+            <select multiple>
+                <option>Ranch</option>
+                <option>Blue Cheese</option>
+                <option>Honey Mustard</option>
+                <option>Caesar</option>
+                <option>Italian</option>
+                <option>1000 Island</option>
+                <option>French</option>
+                <option>Balsamic</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Chef Salad -->
+        <div class="menu-item">
+            <img src="images/salads/chef-salad.jpg" alt="Chef Salad">
+            <h3>Chef Salad</h3>
+            <p>Garden salad topped with ham, turkey, salami, and cheese.</p>
+            <p class="price">$15.99</p>
+            <label>Add Grilled Chicken? (+$4.99)</label>
+            <select>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            <label>Choose 2 Dressings:</label>
+            <select multiple>
+                <option>Ranch</option>
+                <option>Blue Cheese</option>
+                <option>Honey Mustard</option>
+                <option>Caesar</option>
+                <option>Italian</option>
+                <option>1000 Island</option>
+                <option>French</option>
+                <option>Balsamic</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+        <!-- Greek Salad -->
+        <div class="menu-item">
+            <img src="images/salads/greek-salad.jpg" alt="Greek Salad">
+            <h3>Greek Salad</h3>
+            <p>Romaine lettuce, olives, feta cheese, green peppers, tomatoes, onions with Greek dressing.</p>
+            <p class="price">$14.99</p>
+            <label>Add Grilled Chicken? (+$4.99)</label>
+            <select>
+                <option value="no">No</option>
+                <option value="yes">Yes</option>
+            </select>
+            <label>Choose 2 Dressings:</label>
+            <select multiple>
+                <option>Ranch</option>
+                <option>Blue Cheese</option>
+                <option>Honey Mustard</option>
+                <option>Caesar</option>
+                <option>Italian</option>
+                <option>1000 Island</option>
+                <option>French</option>
+                <option>Balsamic</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
