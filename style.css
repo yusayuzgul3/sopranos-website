@@ -1396,3 +1396,2022 @@ body {
     background: red;
     color: white;
 }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Sopranos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Sopranos</div>
+        <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><button class="login-btn">Log In</button></li>
+            <li><button class="order-btn">Order Now</button></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Header -->
+    <header class="menu-header">
+        <img src="menu-header.jpg" alt="Pizza Header">
+        <div class="menu-title">
+            <h1>Menu</h1>
+            <p>Explore our delicious selection of pizzas, salads, appetizers, and more.</p>
+        </div>
+    </header>
+
+    <!-- Quick Navigation Buttons -->
+    <div class="menu-buttons">
+        <a href="appetizers.html" class="menu-btn">Appetizers</a>
+        <a href="salads.html" class="menu-btn">Salads</a>
+        <a href="pizzas.html" class="menu-btn">Pizza</a>
+        <a href="specialty_pizzas.html" class="menu-btn">Specialty Pizza</a>
+        <a href="pasta.html" class="menu-btn">Pasta</a>
+        <a href="burgers.html" class="menu-btn">Burgers</a>
+        <a href="subs_sandwiches.html" class="menu-btn">Subs & Sandwiches</a>
+        <a href="desserts.html" class="menu-btn">Desserts</a>
+        <a href="kids_menu.html" class="menu-btn">Kids Menu</a>
+        <a href="beverages.html" class="menu-btn">Beverages</a>
+    </div>
+
+</body>
+</html>
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c0392b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+nav ul li .login-btn,
+nav ul li .order-btn {
+    background-color: #c0392b;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Menu Header */
+.menu-header {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-top: 60px; /* Ensures it's below navbar */
+}
+
+.menu-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
+/* Menu Navigation Buttons */
+.menu-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu-btn {
+    background-color: white;
+    border: 2px solid #c0392b;
+    color: #c0392b;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #c0392b;
+    color: white;
+}
+
+/* Main Menu Section */
+.menu-section {
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.menu-section h2 {
+    font-size: 28px;
+    color: #c0392b;
+    margin-bottom: 15px;
+}
+
+/* Menu Grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Menu Items */
+.menu-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.menu-item p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Price */
+.menu-item .price {
+    font-size: 18px;
+    color: #c0392b;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Dropdown for Options */
+.menu-item select {
+    margin-top: 8px;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background-color: #c0392b;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #a93226;
+/* Menu Header */
+.menu-header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-header img {
+    width: 100%;
+    height: 250px; /* Adjusted height */
+    object-fit: cover; /* Ensures proper scaling */
+    display: block;
+}
+
+/* Title and Description under the image */
+.menu-title-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.menu-title-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.menu-title-container p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 15px;
+}
+
+/* Quick Navigation Buttons */
+.menu-buttons {
+    text-align: center;
+    margin: 20px;
+}
+
+.menu-buttons a {
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.menu-buttons a:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Fix Navigation Bar to match homepage */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+
+.navbar .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .buttons button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Fix Header Image */
+.menu-header {
+    width: 100%;
+    height: 350px; /* Adjusted for better visibility */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menu-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures full coverage */
+}
+
+/* Fix Title and Description Alignment */
+.menu-title-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.menu-title-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.menu-title-container p {
+    font-size: 18px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 20px;
+}
+
+/* Fix Quick Navigation Buttons */
+.menu-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.menu-buttons a {
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.menu-buttons a:hover {
+    background-color: red;
+    color: white;
+}/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b22222;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #b22222;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .order-btn {
+    border: none;
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-btn {
+    background: none;
+    border: 1px solid #b22222;
+    color: #b22222;
+}
+
+.login-btn:hover {
+    background: #b22222;
+    color: white;
+}
+
+.order-btn {
+    background: #b22222;
+    color: white;
+}
+
+.order-btn:hover {
+    opacity: 0.8;
+}
+
+/* Header Image Fix */
+.menu-header {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Adjust this as needed */
+    object-fit: cover;
+    display: block;
+}
+
+/* Make sure the header container aligns properly */
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ensure text sits properly below the image */
+.menu-title {
+    text-align: center;
+    margin-top: 15px;
+}
+/* Reset default margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d32f2f;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .order-btn {
+    background: #d32f2f;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.order-btn {
+    background: #ff3d00;
+}
+
+/* Menu Header */
+.menu-header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 400px; /* Adjust as needed */
+}
+
+.menu-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-title {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Quick Navigation Buttons */
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.menu-btn {
+    text-decoration: none;
+    color: #d32f2f;
+    font-weight: bold;
+    border: 2px solid #d32f2f;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.menu-btn:hover {
+    background: #d32f2f;
+    color: white;
+}
+
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #d32f2f;
+}
+
+.nav-buttons a {
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-btn {
+    color: #d32f2f;
+    border: 2px solid #d32f2f;
+}
+
+.order-btn {
+    background-color: #d32f2f;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 0; /* Ensure no gap below navbar */
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: black;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+    background-color: #e6b800;
+}
+
+/* Content Sections */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    background-color: #fff;
+    margin-top: 0; /* Ensure no gap between sections */
+}
+
+.text-container {
+    max-width: 50%;
+    text-align: left;
+}
+
+.text-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b92a2a;
+}
+
+.image-container img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-container {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        justify-content: center;
+    }
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #d32f2f;
+}
+
+.nav-buttons a {
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-btn {
+    color: #d32f2f;
+    border: 2px solid #d32f2f;
+}
+
+.order-btn {
+    background-color: #d32f2f;
+    color: white;
+}
+
+/* Menu Header */
+.menu-header {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0; /* Ensure no gap below navbar */
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.menu-title {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 20px 40px;
+    border-radius: 10px;
+    color: white;
+}
+
+.menu-title h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.menu-title p {
+    font-size: 18px;
+}
+
+/* Quick Navigation Buttons */
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.menu-btn {
+    background-color: white;
+    border: 2px solid #d32f2f;
+    color: #d32f2f;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #d32f2f;
+    color: white;
+}
+
+/* Join Our Rewards Section */
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    background-color: #fff;
+}
+
+.text-container {
+    max-width: 50%;
+    text-align: left;
+}
+
+.text-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color:
+
+
+    /* Reset default margin & padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d32f2f;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.login-btn, .order-btn {
+    background: #d32f2f;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.order-btn {
+    background: #ff3d00;
+}
+
+/* Menu Header */
+.menu-header {
+    width: 100%;
+    height: 400px; /* Adjust height to fit screen properly */
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Move Menu Title & Text Below Image */
+.menu-title {
+    text-align: center;
+    margin-top: 20px; /* Push down from header */
+}
+
+.menu-title h1 {
+    font-size: 32px;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.menu-title p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Quick Navigation Buttons */
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.menu-btn {
+    text-decoration: none;
+    color: #d32f2f;
+    font-weight: bold;
+    border: 2px solid #d32f2f;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.menu-btn:hover {
+    background: #d32f2f;
+    color: white;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Menu Grid Layout */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Menu Item Styling */
+.menu-item {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Show items only when scrolled into view */
+.menu-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Menu Item Images */
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.menu-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Menu Item Title */
+.menu-item h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Menu Item Description */
+.menu-item p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Price */
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d32f2f;
+    display: block;
+    margin: 10px 0;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background: #d32f2f;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Button Hover Effect */
+.add-to-cart:hover {
+    background: #b71c1c;
+    transform: scale(1.05);
+}
+
+/* Cart Styling */
+.cart {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart h3 {
+    color: #d32f2f;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart ul li {
+    font-size: 14px;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#cart-total {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    background: #d32f2f;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    background: #b71c1c;
+    transform: scale(1.05);
+}
+
+/* Ensure Full-Width Header Image */
+.menu-header img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Fix Quick Navigation Buttons Layout */
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Fix Individual Navigation Buttons */
+.menu-btn {
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 2px solid #d32f2f;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #d32f2f;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: #d32f2f;
+    color: white;
+}
+
+/* Fix Grid Layout for Menu Items */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Ensure Even Spacing of Items */
+.menu-item {
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fix Image Sizing */
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Ensure Add to Cart Buttons Align */
+.add-to-cart {
+    background: #d32f2f;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #b71c1c;
+}
+
+/* Ensure Full-Width Header Image */
+.menu-header img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Fix Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #d32f2f;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #d32f2f;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.login-btn, .order-btn {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.login-btn {
+    border: 2px solid #d32f2f;
+    color: #d32f2f;
+}
+
+.login-btn:hover {
+    background: #d32f2f;
+    color: white;
+}
+
+.order-btn {
+    background: #d32f2f;
+    color: white;
+    font-weight: bold;
+}
+
+.order-btn:hover {
+    background: #b71c1c;
+}
+
+/* Fix Quick Navigation Buttons Layout */
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.menu-btn {
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 2px solid #d32f2f;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #d32f2f;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: #d32f2f;
+    color: white;
+}
+
+/* Fix Grid Layout for Menu Items */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Ensure Even Spacing of Items */
+.menu-item {
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fix Image Sizing */
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Ensure Add to Cart Buttons Align */
+.add-to-cart {
+    background: #d32f2f;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #b71c1c;
+}
+
+/* Ensure Full-Width Header Image */
+.menu-header img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Fix Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: #d32f2f;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #d32f2f;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.login-btn, .order-btn {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.login-btn {
+    border: 2px solid #d32f2f;
+    color: #d32f2f;
+}
+
+.login-btn:hover {
+    background: #d32f2f;
+    color: white;
+}
+
+.order-btn {
+    background: #d32f2f;
+    color: white;
+    font-weight: bold;
+}
+
+.order-btn:hover {
+    background: #b71c1c;
+}
+
+/* Fix Quick Navigation Buttons Layout */
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.menu-btn {
+    padding: 12px 18px;
+    font-size: 16px;
+    border: 2px solid #d32f2f;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #d32f2f;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover, .menu-btn.active {
+    background: #d32f2f;
+    color: white;
+}
+
+/* Fix Grid Layout for Menu Items */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Ensure Even Spacing of Items */
+.menu-item {
+    text-align: center;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fix Image Sizing */
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Ensure Add to Cart Buttons Align */
+.add-to-cart {
+    background: #d32f2f;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.add-to-cart:hover {
+    background: #b71c1c;
+}
+/* Center the category buttons */
+.menu-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px; /* Adjust spacing between buttons and title */
+}
+
+/* Style for category buttons */
+.menu-btn {
+    background: white;
+    border: 2px solid red;
+    color: red;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: red;
+    color: white;
+}
+
+/* Fix alignment of the "Appetizers" title */
+.menu-title {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 10px; /* Adjust spacing from buttons */
+}
+
+/* Fix menu grid layout */
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Ensure menu items have consistent width */
+.menu-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px; /* Set a fixed width for menu items */
+}/* Center and style the menu title */
+.menu-title {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 10px;  /* Adjust spacing between buttons and title */
+    margin-bottom: 20px; /* Adds spacing before menu items */
+    font-weight: bold;
+}
+
+/* Center the category buttons */
+.menu-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px; /* Adjust spacing between buttons and title */
+}
+
+/* Style for category buttons */
+.menu-btn {
+    background: white;
+    border: 2px solid red;
+    color: red;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: red;
+    color: white;
+}
+
+/* Fix menu grid layout */
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Ensure menu items have consistent width */
+.menu-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px; /* Set a fixed width for menu items */
+}
+
+/* Center the category navigation buttons */
+.menu-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px; /* Adjusts space between buttons and title */
+}
+
+/* Style for category buttons */
+.menu-btn {
+    background: white;
+    border: 2px solid red;
+    color: red;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: red;
+    color: white;
+}
+
+/* Fix alignment of the "Appetizers" title */
+.menu-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px; /* Increased spacing from buttons */
+    margin-bottom: 20px; /* Ensure space between title and grid */
+    display: block; /* Make sure it does not interfere with grid layout */
+    width: 100%;
+}
+
+/* Fix menu grid layout */
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Ensure menu items have consistent width */
+.menu-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px; /* Set a fixed width for menu items */
+}
+/* Fix alignment of the "Appetizers" title */
+.menu-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px; /* Adds spacing below category buttons */
+    margin-bottom: 20px; /* Ensures spacing before menu items */
+    display: block; /* Ensure it doesn't interfere with grid */
+    width: 100%;
+    position: static; /* REMOVE absolute positioning */
+    transform: none; /* REMOVE translate adjustments */
+    background: none; /* Ensure no background is applied */
+    padding: 0; /* Remove unnecessary padding */
+}
+
+/* Center the category navigation buttons */
+.menu-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px; /* Adds spacing between buttons and title */
+}
+
+/* Style for category buttons */
+.menu-btn {
+    background: white;
+    border: 2px solid red;
+    color: red;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: red;
+    color: white;
+}
+
+/* Fix alignment of the "Appetizers" title */
+.menu-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 10px; /* Ensures correct spacing below category buttons */
+    margin-bottom: 20px; /* Adds space before menu items */
+    display: block;
+    width: 100%;
+    position: static; /* REMOVE absolute positioning */
+}
+
+/* Fix menu grid layout */
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Ensure menu items have consistent width */
+.menu-item {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px; /* Set a fixed width for menu items */
+}
+
+/* Make sure the header image takes full width */
+.menu-header {
+    width: 100%;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ensure the menu title is BELOW the image */
+.menu-title {
+    text-align: center;
+    margin-top: 20px; /* Space between image and text */
+    margin-bottom: 20px; /* Space before buttons */
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Center the category navigation buttons */
+.menu-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px; /* Ensures space between buttons and next content */
+}
+
+/* Style for category buttons */
+.menu-btn {
+    background: white;
+    border: 2px solid red;
+    color: red;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: red;
+    color: white;
+}
+
+/* Fix the menu title position */
+.menu-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 20px; /* Ensures spacing between image and title */
+    margin-bottom: 20px; /* Adds spacing before buttons */
+    display: block; /* Ensure it's visible */
+    width: 100%;
+    color: black; /* Ensure text is visible */
+}
+
+/* Ensure the paragraph below the title is visible */
+.menu-title p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 5px;
+}
+
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #333;
+    text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    border-bottom: 2px solid red;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Navigation Buttons */
+.nav-buttons a {
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.login-btn {
+    color: red;
+    border: 2px solid red;
+}
+
+.order-btn {
+    background: red;
+    color: white;
+    font-weight: bold;
+}
+
+/* Header Image */
+.menu-header {
+    width: 100%;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Menu Title & Description */
+.menu-intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: black;
+}
+
+.menu-description {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Category Navigation Buttons */
+.menu-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.menu-btn {
+    background: white;
+    border: 2px solid red;
+    color: red;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+    background: red;
+    color: white;
+}
+
+.menu-title {
+    position: static;  /* Removes absolute positioning */
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 20px; /* Ensures spacing between buttons and title */
+    margin-bottom: 20px; /* Adds spacing before menu items */
+    display: block;
+    width: 100%;
+    color: black;
+    background: none; /* Removes the background overlay */
+    padding: 0; /* Resets unnecessary padding */
+    border-radius: 0; /* Removes rounded effect */
+}
+
+/* Ensure paragraph under menu title is visible */
+.menu-title p {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 5px;
+}

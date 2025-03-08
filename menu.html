@@ -4,48 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | Sopranos</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <header>
-        <h1 class="logo">Sopranos</h1>
-        <nav>
-            <a href="menu.html">Menu</a>
-            <a href="rewards.html">Rewards</a>
-            <a href="specials.html">Specials</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <div>
-            <button class="login-btn">Log In</button>
-            <button class="order-btn">Order Now</button>
+    <nav class="navbar">
+        <div class="logo">
+            <h1>Sopranos</h1>
         </div>
-    </header>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <a href="#" class="login-btn">Log In</a>
+            <a href="order.html" class="order-btn">Order Now</a>
+        </div>
+    </nav>
 
-    <!-- Menu Header Image -->
-    <div class="menu-header">
-        <img src="images/menu-header.jpg" alt="Delicious Pizza">
-        <div class="menu-header-text">
-            <h1>Menu</h1>
-            <p>Explore our delicious pizzas, salads, appetizers, and more.</p>
-        </div>
+    <!-- Menu Header -->
+<header class="menu-header">
+    <img src="images/menu-header.jpg" alt="Delicious Pizza" class="header-image">
+</header>
+
+<!-- Menu Title (Make sure this is below the header) -->
+<div class="menu-title">
+    <h1>Menu</h1>
+    <p>Explore our delicious selection of pizzas, salads, appetizers, and more.</p>
+</div>
+
+
+    <!-- Quick Navigation Buttons -->
+    <div class="menu-buttons">
+        <a href="appetizers.html" class="menu-btn">Appetizers</a>
+        <a href="salads.html" class="menu-btn">Salads</a>
+        <a href="pizza.html" class="menu-btn">Pizza</a>
+        <a href="specialty_pizza.html" class="menu-btn">Specialty Pizza</a>
+        <a href="pasta.html" class="menu-btn">Pasta</a>
+        <a href="burgers.html" class="menu-btn">Burgers</a>
+        <a href="subs_sandwiches.html" class="menu-btn">Subs & Sandwiches</a>
+        <a href="desserts.html" class="menu-btn">Desserts</a>
+        <a href="kids_menu.html" class="menu-btn">Kids Menu</a>
+        <a href="beverages.html" class="menu-btn">Beverages</a>
     </div>
 
-    <!-- Category Navigation -->
-    <div class="menu-container">
-        <div class="menu-navigation">
-            <button onclick="window.location.href='appetizers.html'">Appetizers</button>
-            <button onclick="window.location.href='salads.html'">Salads</button>
-            <button onclick="window.location.href='pizza.html'">Pizza</button>
-            <button onclick="window.location.href='specialty-pizza.html'">Specialty Pizza</button>
-            <button onclick="window.location.href='pasta.html'">Pasta</button>
-            <button onclick="window.location.href='burgers.html'">Burgers</button>
-            <button onclick="window.location.href='subs.html'">Subs & Sandwiches</button>
-            <button onclick="window.location.href='desserts.html'">Desserts</button>
-            <button onclick="window.location.href='beverages.html'">Beverages</button>
+    <!-- Join Our Rewards Section -->
+    <section class="content-section">
+        <div class="text-container">
+            <h2>Join Our Rewards</h2>
+            <p>Earn points on every order.</p>
+            <a href="rewards.html" class="btn">Sign Up</a>
         </div>
-    </div>
+        <div class="image-container">
+            <img src="images/rewards.png" alt="Rewards Program">
+        </div>
+    </section>
 
 </body>
 </html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salads | Sopranos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+   <nav>
+      <div class="logo">
+          <h1>Sopranos</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="rewards.html">Rewards</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-buttons">
+          <a href="#" class="login-btn">Log In</a>
+          <a href="order.html" class="order-btn">Order Now</a>
+      </div>
+   </nav>
+
+   <!-- Quick Navigation Buttons -->
+   <div class="menu-buttons">
+      <a href="appetizers.html" class="menu-btn">Appetizers</a>
+      <a href="salads.html" class="menu-btn">Salads</a>
+      <a href="pizza.html" class="menu-btn">Pizza</a>
+      <a href="specialty_pizza.html" class="menu-btn">Specialty Pizza</a>
+      <a href="pasta.html" class="menu-btn">Pasta</a>
+      <a href="burgers.html" class="menu-btn">Burgers</a>
+      <a href="subs_sandwiches.html" class="menu-btn">Subs & Sandwiches</a>
+      <a href="desserts.html" class="menu-btn">Desserts</a>
+      <a href="kids_menu.html" class="menu-btn">Kids Menu</a>
+      <a href="beverages.html" class="menu-btn">Beverages</a>
+   </div>
+
+   <!-- Salads Section -->
+   <section id="salads" class="menu-section">
+       <h2>Salads</h2>
+       <div class="menu-grid">
+           <!-- Caesar Salad -->
+           <div class="menu-item">
+               <img src="images/1.jpg" alt="Caesar Salad">
+               <h3>Caesar Salad</h3>
+               <p>Romaine lettuce, croutons, parmesan cheese topped with creamy Caesar dressing</p>
+               <p class="price">$10.99</p>
+               <label>Add Grilled Chicken?</label>
+               <select class="extra-option">
+                   <option value="no">No</option>
+                   <option value="yes">Yes (+$4.99)</option>
+               </select>
+               <label>Choose Dressing:</label>
+               <select class="dressing-option">
+                   <option value="ranch">Ranch</option>
+                   <option value="blue-cheese">Blue Cheese</option>
+                   <option value="honey-mustard">Honey Mustard</option>
+                   <option value="caesar">Caesar</option>
+                   <option value="italian">Italian</option>
+                   <option value="1000-island">1000 Island</option>
+                   <option value="french">French</option>
+                   <option value="balsamic">Balsamic</option>
+               </select>
+               <button class="add-to-cart">Add to Cart</button>
+           </div>
+
+           <!-- Grilled Chicken Caesar -->
+           <div class="menu-item">
+               <img src="images/1.jpg" alt="Grilled Chicken Caesar">
+               <h3>Grilled Chicken Caesar</h3>
+               <p>Fresh romaine lettuce with grilled chicken, parmesan cheese, croutons & Caesar dressing</p>
+               <p class="price">$13.99</p>
+               <label>Add Extra Grilled Chicken?</label>
+               <select class="extra-option">
+                   <option value="no">No</option>
+                   <option value="yes">Yes (+$4.99)</option>
+               </select>
+               <label>Choose Dressing:</label>
+               <select class="dressing-option">
+                   <option value="ranch">Ranch</option>
+                   <option value="blue-cheese">Blue Cheese</option>
+                   <option value="honey-mustard">Honey Mustard</option>
+                   <option value="caesar">Caesar</option>
+                   <option value="italian">Italian</option>
+                   <option value="1000-island">1000 Island</option>
+                   <option value="french">French</option>
+                   <option value="balsamic">Balsamic</option>
+               </select>
+               <button class="add-to-cart">Add to Cart</button>
+           </div>
+       </div>
+   </section>
+
+   <script src="script.js"></script>
+</body>
+</html>
