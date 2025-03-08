@@ -40,7 +40,7 @@
 <!-- Menu Navigation Buttons -->
 <div class="menu-categories">
     <button class="menu-btn active" onclick="scrollToSection('Appetizer')">Appetizer</button>
-    <button class="menu-btn" onclick="scrollToSection('Salad')">Salads</button>
+    <button class="menu-btn" onclick="scrollToSection('salads')">Salads</button>
     <button class="menu-btn" onclick="scrollToSection('Pizza')">Pizza</button>
     <button class="menu-btn" onclick="scrollToSection('Speciality Pizza')">Speciality</button>
     <button class="menu-btn" onclick="scrollToSection('Pasta')">Pasta</button>
@@ -133,6 +133,19 @@
             <button class="add-to-cart">Add to Cart</button>
         </div>
 
+        <!-- Fresh Cut Fries -->
+        <div class="menu-item">
+            <img src="images/appetizer-placeholder.jpg" alt="Fresh Cut Fries">
+            <h3>Fresh Cut Fries</h3>
+            <p>Crispy fresh cut french fries</p>
+            <select>
+                <option>Small - $9.99</option>
+                <option>Large - $11.99</option>
+            </select>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+
+
         <!-- Cheese Fries -->
         <div class="menu-item">
             <img src="images/appetizer-placeholder.jpg" alt="Cheese Fries">
@@ -173,185 +186,246 @@
     </div>
 </section>
 
-<!-- Salad Section -->
-<section id="salad">
-    <h2 class="menu-category">Salads</h2>
-    <div class="menu-grid">
+<!-- SALADS SECTION -->
+<section id="salads" class="menu-section">
+    <h2>Salads</h2>
+    <div class="menu-items">
 
         <!-- Caesar Salad -->
         <div class="menu-item">
-            <img src="images/salads/caesar-salad.jpg" alt="Caesar Salad">
+            <img src="images/1.jpg" alt="Caesar Salad">
             <h3>Caesar Salad</h3>
-            <p>Romaine lettuce, croutons, parmesan cheese topped with creamy Caesar dressing.</p>
+            <p>Romaine lettuce, croutons, parmesan cheese topped with creamy Caesar dressing</p>
             <p class="price">$10.99</p>
-            <label>Extra Grilled Chicken? (+$4.99)</label>
-            <select>
+            <label>Add Grilled Chicken?</label>
+            <select class="extra-option">
                 <option value="no">No</option>
-                <option value="yes">Yes</option>
+                <option value="yes">Yes (+$4.99)</option>
             </select>
-            <label>Choose 2 Dressings:</label>
-            <select multiple>
-                <option>Ranch</option>
-                <option>Blue Cheese</option>
-                <option>Honey Mustard</option>
-                <option>Caesar</option>
-                <option>Italian</option>
-                <option>1000 Island</option>
-                <option>French</option>
-                <option>Balsamic</option>
+            <label>Choose Dressing:</label>
+            <select class="dressing-option">
+                <option value="ranch">Ranch</option>
+                <option value="blue-cheese">Blue Cheese</option>
+                <option value="honey-mustard">Honey Mustard</option>
+                <option value="caesar">Caesar</option>
+                <option value="italian">Italian</option>
+                <option value="1000-island">1000 Island</option>
+                <option value="french">French</option>
+                <option value="balsamic">Balsamic</option>
             </select>
             <button class="add-to-cart">Add to Cart</button>
         </div>
 
         <!-- Grilled Chicken Caesar -->
         <div class="menu-item">
-            <img src="images/salads/grilled-chicken-caesar.jpg" alt="Grilled Chicken Caesar">
+            <img src="images/1.jpg" alt="Grilled Chicken Caesar">
             <h3>Grilled Chicken Caesar</h3>
-            <p>Fresh romaine lettuce, grilled chicken, parmesan cheese, and Caesar dressing.</p>
+            <p>Fresh romaine lettuce with grilled chicken, parmesan cheese, croutons & Caesar dressing</p>
             <p class="price">$13.99</p>
-            <label>Extra Grilled Chicken? (+$4.99)</label>
-            <select>
+            <label>Add Extra Grilled Chicken?</label>
+            <select class="extra-option">
                 <option value="no">No</option>
-                <option value="yes">Yes</option>
+                <option value="yes">Yes (+$4.99)</option>
             </select>
-            <label>Choose 2 Dressings:</label>
-            <select multiple>
-                <option>Ranch</option>
-                <option>Blue Cheese</option>
-                <option>Honey Mustard</option>
-                <option>Caesar</option>
-                <option>Italian</option>
-                <option>1000 Island</option>
-                <option>French</option>
-                <option>Balsamic</option>
+            <label>Choose Dressing:</label>
+            <select class="dressing-option">
+                <option value="ranch">Ranch</option>
+                <option value="blue-cheese">Blue Cheese</option>
+                <option value="honey-mustard">Honey Mustard</option>
+                <option value="caesar">Caesar</option>
+                <option value="italian">Italian</option>
+                <option value="1000-island">1000 Island</option>
+                <option value="french">French</option>
+                <option value="balsamic">Balsamic</option>
             </select>
             <button class="add-to-cart">Add to Cart</button>
         </div>
 
         <!-- Garden Salad -->
         <div class="menu-item">
-            <img src="images/salads/garden-salad.jpg" alt="Garden Salad">
+            <img src="images/1.jpg" alt="Garden Salad">
             <h3>Garden Salad</h3>
-            <p>Fresh lettuce, tomatoes, cucumbers, onions, and croutons.</p>
+            <p>Lettuce, tomatoes, cucumbers, onions, and croutons</p>
             <p class="price">$10.99</p>
-            <label>Add Grilled Chicken? (+$4.99)</label>
-            <select>
+            <label>Add Grilled Chicken?</label>
+            <select class="extra-option">
                 <option value="no">No</option>
-                <option value="yes">Yes</option>
+                <option value="yes">Yes (+$4.99)</option>
             </select>
-            <label>Choose 2 Dressings:</label>
-            <select multiple>
-                <option>Ranch</option>
-                <option>Blue Cheese</option>
-                <option>Honey Mustard</option>
-                <option>Caesar</option>
-                <option>Italian</option>
-                <option>1000 Island</option>
-                <option>French</option>
-                <option>Balsamic</option>
+            <label>Choose Dressing:</label>
+            <select class="dressing-option">
+                <option value="ranch">Ranch</option>
+                <option value="blue-cheese">Blue Cheese</option>
+                <option value="honey-mustard">Honey Mustard</option>
+                <option value="caesar">Caesar</option>
+                <option value="italian">Italian</option>
+                <option value="1000-island">1000 Island</option>
+                <option value="french">French</option>
+                <option value="balsamic">Balsamic</option>
             </select>
             <button class="add-to-cart">Add to Cart</button>
         </div>
 
         <!-- Grilled or Crispy Chicken Salad -->
         <div class="menu-item">
-            <img src="images/salads/grilled-crispy-chicken-salad.jpg" alt="Grilled or Crispy Chicken Salad">
+            <img src="images/1.jpg" alt="Grilled or Crispy Chicken Salad">
             <h3>Grilled or Crispy Chicken Salad</h3>
-            <p>Garden salad with your choice of grilled or fried chicken.</p>
+            <p>Garden salad served with your choice of grilled or fried breaded chicken breast</p>
             <p class="price">$13.99</p>
-            <label>Extra Grilled Chicken? (+$4.99)</label>
-            <select>
-                <option value="no">No</option>
-                <option value="yes">Yes</option>
+            <label>Choose Chicken Type:</label>
+            <select class="chicken-option">
+                <option value="grilled">Grilled</option>
+                <option value="crispy">Crispy</option>
             </select>
-            <label>Choose 2 Dressings:</label>
-            <select multiple>
-                <option>Ranch</option>
-                <option>Blue Cheese</option>
-                <option>Honey Mustard</option>
-                <option>Caesar</option>
-                <option>Italian</option>
-                <option>1000 Island</option>
-                <option>French</option>
-                <option>Balsamic</option>
+            <label>Choose Dressing:</label>
+            <select class="dressing-option">
+                <option value="ranch">Ranch</option>
+                <option value="blue-cheese">Blue Cheese</option>
+                <option value="honey-mustard">Honey Mustard</option>
+                <option value="caesar">Caesar</option>
+                <option value="italian">Italian</option>
+                <option value="1000-island">1000 Island</option>
+                <option value="french">French</option>
+                <option value="balsamic">Balsamic</option>
             </select>
             <button class="add-to-cart">Add to Cart</button>
         </div>
 
         <!-- Buffalo Chicken Salad -->
         <div class="menu-item">
-            <img src="images/salads/buffalo-chicken-salad.jpg" alt="Buffalo Chicken Salad">
+            <img src="images/1.jpg" alt="Buffalo Chicken Salad">
             <h3>Buffalo Chicken Salad</h3>
-            <p>Blend of fresh vegetables served with buffalo breaded chicken breast.</p>
+            <p>Fresh vegetables with buffalo breaded chicken breast</p>
             <p class="price">$14.99</p>
-            <label>Extra Grilled Chicken? (+$4.99)</label>
-            <select>
+            <label>Add Grilled Chicken?</label>
+            <select class="extra-option">
                 <option value="no">No</option>
-                <option value="yes">Yes</option>
+                <option value="yes">Yes (+$4.99)</option>
             </select>
-            <label>Choose 2 Dressings:</label>
-            <select multiple>
-                <option>Ranch</option>
-                <option>Blue Cheese</option>
-                <option>Honey Mustard</option>
-                <option>Caesar</option>
-                <option>Italian</option>
-                <option>1000 Island</option>
-                <option>French</option>
-                <option>Balsamic</option>
+            <label>Choose Dressing:</label>
+            <select class="dressing-option">
+                <option value="ranch">Ranch</option>
+                <option value="blue-cheese">Blue Cheese</option>
+                <option value="honey-mustard">Honey Mustard</option>
+                <option value="caesar">Caesar</option>
+                <option value="italian">Italian</option>
+                <option value="1000-island">1000 Island</option>
+                <option value="french">French</option>
+                <option value="balsamic">Balsamic</option>
             </select>
             <button class="add-to-cart">Add to Cart</button>
         </div>
-
-        <!-- Chef Salad -->
+        
+        <!-- Chef -->
         <div class="menu-item">
-            <img src="images/salads/chef-salad.jpg" alt="Chef Salad">
+            <img src="images/1.jpg" alt="Chef Salad">
             <h3>Chef Salad</h3>
-            <p>Garden salad topped with ham, turkey, salami, and cheese.</p>
-            <p class="price">$15.99</p>
-            <label>Add Grilled Chicken? (+$4.99)</label>
-            <select>
+            <p>Garden salad topped with ham,turkey,salami and cheese</p>
+            <p class="price">$14.99</p>
+            <label>Add Grilled Chicken?</label>
+            <select class="extra-option">
                 <option value="no">No</option>
-                <option value="yes">Yes</option>
+                <option value="yes">Yes (+$4.99)</option>
             </select>
-            <label>Choose 2 Dressings:</label>
-            <select multiple>
-                <option>Ranch</option>
-                <option>Blue Cheese</option>
-                <option>Honey Mustard</option>
-                <option>Caesar</option>
-                <option>Italian</option>
-                <option>1000 Island</option>
-                <option>French</option>
-                <option>Balsamic</option>
+            <label>Choose Dressing:</label>
+            <select class="dressing-option">
+                <option value="ranch">Ranch</option>
+                <option value="blue-cheese">Blue Cheese</option>
+                <option value="honey-mustard">Honey Mustard</option>
+                <option value="caesar">Caesar</option>
+                <option value="italian">Italian</option>
+                <option value="1000-island">1000 Island</option>
+                <option value="french">French</option>
+                <option value="balsamic">Balsamic</option>
             </select>
             <button class="add-to-cart">Add to Cart</button>
         </div>
 
         <!-- Greek Salad -->
         <div class="menu-item">
-            <img src="images/salads/greek-salad.jpg" alt="Greek Salad">
+            <img src="images/1.jpg" alt="Greek Salad">
             <h3>Greek Salad</h3>
-            <p>Romaine lettuce, olives, feta cheese, green peppers, tomatoes, onions with Greek dressing.</p>
+            <p>Romaine lettuce, Kalamata olives, feta cheese, onions, green peppers, tomatoes, cucumbers</p>
             <p class="price">$14.99</p>
-            <label>Add Grilled Chicken? (+$4.99)</label>
-            <select>
+            <label>Add Grilled Chicken?</label>
+            <select class="extra-option">
                 <option value="no">No</option>
-                <option value="yes">Yes</option>
+                <option value="yes">Yes (+$4.99)</option>
             </select>
-            <label>Choose 2 Dressings:</label>
-            <select multiple>
-                <option>Ranch</option>
-                <option>Blue Cheese</option>
-                <option>Honey Mustard</option>
-                <option>Caesar</option>
-                <option>Italian</option>
-                <option>1000 Island</option>
-                <option>French</option>
-                <option>Balsamic</option>
+            <label>Choose Dressing:</label>
+            <select class="dressing-option">
+                <option value="ranch">Ranch</option>
+                <option value="blue-cheese">Blue Cheese</option>
+                <option value="honey-mustard">Honey Mustard</option>
+                <option value="caesar">Caesar</option>
+                <option value="italian">Italian</option>
+                <option value="1000-island">1000 Island</option>
+                <option value="french">French</option>
+                <option value="balsamic">Balsamic</option>
             </select>
             <button class="add-to-cart">Add to Cart</button>
         </div>
 
     </div>
 </section>
+
+<div id="pizza" class="pizza-section">
+    <h2 class="centered-title">Pizzas</h2>
+
+    <div class="pizza-grid">
+        <!-- New York Style Pizza -->
+        <div class="pizza-item">
+            <img src="pizza-placeholder.jpg" alt="Pizza">
+            <h3>New York Style Pizza</h3>
+            <p>Homemade sauce, homemade dough, rolled to order.</p>
+
+            <label for="size1">Choose Size:</label>
+            <select id="size1" onchange="updateToppingPrice('size1', 'toppings-container1', 'price1')">
+                <option value="15.99" data-topping-price="1.50">Small 14" - $15.99</option>
+                <option value="20.99" data-topping-price="2.99">Large 18" - $20.99</option>
+                <option value="24.99" data-topping-price="3.99">Extra Large 22" - $24.99</option>
+            </select>
+            <p id="price1">$15.99</p>
+
+            <div id="toppings-container1">
+                <label>Extra Toppings ($<span id="topping-price1">1.50</span> each):</label>
+                <div class="toppings-list" id="topping-list1"></div>
+                <button onclick="addTopping(1)">+ Add Topping</button>
+            </div>
+
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Stromboli & Calzone -->
+        <div class="pizza-item">
+            <img src="calzone-placeholder.jpg" alt="Calzone">
+            <h3>Stromboli & Calzone</h3>
+            <p>Stuffed with delicious cheese and toppings.</p>
+            <p>$11.99</p>
+
+            <div id="toppings-container2">
+                <label>Extra Toppings ($<span id="topping-price2">0.99</span> each):</label>
+                <div class="toppings-list" id="topping-list2"></div>
+                <button onclick="addTopping(2)">+ Add Topping</button>
+            </div>
+
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Pizza by the Slice -->
+        <div class="pizza-item">
+            <img src="pizza-slice-placeholder.jpg" alt="Pizza Slice">
+            <h3>Pizza by the Slice</h3>
+            <p>Quick and delicious single slice.</p>
+            <p>$4.25</p>
+
+            <div id="toppings-container3">
+                <label>Extra Toppings ($0.50 each):</label>
+                <div class="toppings-list" id="topping-list3"></div>
+                <button onclick="addTopping(3)">+ Add Topping</button>
+            </div>
+
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</div>
