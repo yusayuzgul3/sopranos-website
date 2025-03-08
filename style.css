@@ -368,15 +368,100 @@ form {
     background-color: #e6b800;
     transform: scale(1.05);
 }
-/* Hand-Tossed Dough Section */
+/* Hand-Tossed Dough Section (Below Video) */
 .hand-tossed {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 80px 10%;
     background-color: #fff;
     text-align: center;
+    margin-top: -5px; /* Makes sure it starts right after the video */
 }
+
+/* Text Styling */
+.text-container {
+    max-width: 400px;
+    text-align: left;
+}
+
+.text-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* View Menu Button */
+.btn {
+    display: inline-block;
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b92a2a;
+}
+
+/* Image Styling */
+.image-container img {
+    max-width: 500px;
+    height: auto;
+}
+
+
+/* Text Styling */
+.text-container {
+    max-width: 400px;
+    text-align: left;
+}
+
+.text-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* View Menu Button */
+.btn {
+    display: inline-block;
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b92a2a;
+}
+
+/* Image Styling */
+.image-container img {
+    max-width: 500px;
+    height: auto;
+}
+
 
 .text-container {
     max-width: 400px;
@@ -415,4 +500,86 @@ form {
 .image-container img {
     max-width: 500px;
     height: auto;
+}
+/* Hand-Tossed Dough Section (Below Video) */
+.hand-tossed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    background-color: #fff;
+    text-align: center;
+    margin-top: -5px; /* Makes sure it starts right after the video */
+}
+
+/* Text Styling */
+.text-container {
+    max-width: 400px;
+    text-align: left;
+}
+
+.text-container h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+}
+
+.text-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* View Menu Button */
+.btn {
+    display: inline-block;
+    background-color: #d32f2f;
+    color: white;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b92a2a;
+}
+
+/* Image Styling */
+.image-container img {
+    max-width: 500px;
+    height: auto;
+}
+/* Adjusted Image Size & Alignment */
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; /* Moves image to the right */
+}
+
+.image-container img {
+    width: 100%; /* Makes it fill the available space */
+    max-width: 600px; /* Adjust this to control max size */
+    height: auto;
+    border-radius: 10px; /* Adds smooth corners */
+}
+
+/* Hand-Tossed Dough Section Fix */
+.hand-tossed {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: #fff;
+    margin-top: 0; /* Ensures it starts right after the video */
+    gap: 20px; /* Adds spacing between text and image */
+}
+
+/* Text Styling */
+.text-container {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
 }
